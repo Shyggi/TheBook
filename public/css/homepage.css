@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
+}
+
+body {
+    background-color: #ECD2AC;
+}
+
+.title {
+    font-family: 'Gotham' ;
+    font-weight: 900;
+}
+
+.body {
+    font-family: Helvetica, sans-serif;
+}
+
+.navbar-icon {
+    font-size: 2em;
+    color: #6C5530;
+}
+
+.bg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5)
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: #3F3E3E;
+    padding: 0;
+}
+
+.containered {
+    position: relative;
+    text-align: center;
+    color: #3F3E3E;
+    padding: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.input-group {
+    margin: 0 auto;
+    width: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+    border-radius: 15px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+}
+
+.navbar-custom {
+    background-color: #fdfdfd;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,.5);
+    border-width: thin;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+.home-headings {
+    font-family: 'Poppins';
+}
+
+.home-headings > h1 {
+    font-weight: 700;
+}
+
+.vertical-center {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.options{
+    margin: 5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    justify-content: center;
+}
+
+
+.icon-white {
+    color:white;
+}
+
+a.nav-link{
+    letter-spacing: 0.25rem;
+}
+
+.input-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+}
+
+.input-field {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+.no-display{
+    display:none;
+}
+
+.submit-reminder{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    color: red;
+}
+
+.create {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+
+    letter-spacing: 0.05rem;
+    font-family: 'Poppins', serif;
+    background-color: #3d5a80;
+}
+
+.fa {
+    color: #3F3E3E;
+    margin-top: 10px;
+}
+
+a.btn-primary, button.btn, button.btn:hover, button.btn:active,
+button.btn:active:focus{
+    background-color: #fff;
+    border-color: #fff;
+    color: #3F3E3E;
+}
+
+button.btn:hover {
+    background-color: #E7B366;
+    border-color: #E7B366;
+    color: #3F3E3E;
+}
+
+.border1 {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    height: 50px;
+}
+
+.border2 {
+    border-radius: 15px;
+    height: 45px;
+    width: calc(20% - 100px);
+    margin: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5)
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 0 !important;
+    border-radius: 15px;
+}
+
+
+.buttons {
+    float: center;
+}
+
+.inline {
+    display: inline;
+}
+
+.btn-create {
+    width: 70%;
+    height: 110%;
+    padding-bottom: 20px;
+  }
+
+  .col-md-4 {
+    flex: 0 0 20rem;
+    width: 300px;
+}
+
+.row {
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+}
