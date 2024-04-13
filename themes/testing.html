@@ -1,0 +1,87 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" type="module"></script>
+
+<style>
+    .tag {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tag.selected {
+  background-color: #28a745;
+}
+
+.form-control-focus {
+color: #212529;
+background-color: #fff;
+border-color: #86b7fe;
+outline: 0;
+box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.was-validated :valid + .form-control-focus {
+border-color: #198754;
+box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+.was-validated :invalid + .form-control-focus {
+border-color: #dc3545;
+box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+
+</style>
+
+<form>
+    <div class="input-group mb-4">
+        <div class="containered text-center body">
+            <div id="selectedTags"></div> <!-- This is where the selected tags will be displayed -->
+        </div>
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-primary border1"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+</form>
+
+<br>
+<div class="containered text-center body">
+    <div id="selectedTags"></div> <!-- This is where the selected tags will be displayed -->
+</div>
+<div class="containered text-center body">
+    <span class="tag btn btn-primary border2" data-id="1">Romance</span>
+    <span class="tag btn btn-primary border2" data-id="2">Fantasy</span>
+    <span class="tag btn btn-primary border2" data-id="3">Mystery</span>
+    <span class="tag btn btn-primary border2" data-id="4">Science Fiction</span>
+    <span class="tag btn btn-primary border2" data-id="5">Young Adult</span>
+</div>
+<div class="containered text-center body">
+    <span class="tag btn btn-primary border2" data-id="6">Classics</span>
+    <span class="tag btn btn-primary border2" data-id="7">Fiction</span>
+    <span class="tag btn btn-primary border2" data-id="8">School</span>
+    <span class="tag btn btn-primary border2" data-id="9">Middle Grade</span>
+    <span class="tag btn btn-primary border2" data-id="10">Thriller</span>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(".tag").click(function() {
+        $(this).toggleClass("selected");
+        updateSelectedTags();
+    });
+
+    function updateSelectedTags() {
+        var selectedTags = [];
+        $(".tag.selected").each(function() {
+            selectedTags.push($(this).text());
+        });
+        $("#selectedTags").html(selectedTags.join(", "));
+    }
+});
+</script>
+
+  

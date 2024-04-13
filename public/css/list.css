@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url("https://fonts.cdnfonts.com/css/helvetica-neue-55");
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
+}
+
+body {
+    background-color: #ECD2AC;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+}
+
+.navbar-custom {
+    background-color: #fdfdfd;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,.5);
+    border-width: thin;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+i.fa {
+    color: #3F3E3E;
+    font-size: 2em;
+}
+
+.navbar-icon {
+    font-size: 2em;
+    color: #6C5530;
+}
+
+.body {
+    font-family: Helvetica, sans-serif;
+}
+
+.containered {
+    position: relative;
+    text-align: center;
+    color: #3F3E3E;
+    padding: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.border2 {
+    border-radius: 15px;
+    height: 45px;
+    width: calc(25% - 100px);
+    margin: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5)
+}
+
+a.btn-primary, button.btn, button.btn:hover, button.btn:active,
+button.btn:active:focus{
+    background-color: #fff;
+    border-color: #fff;
+    color: #3F3E3E;
+}
+
+footer {
+    text-align: center;
+}
+
+.footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-family: 'Gotham' ;
+    font-weight: 900;
+    font-size:2em;
+    margin-top: 2em;
+}
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 1em;
+    width: 80%;
+}
+  
+.FlexItem {
+    flex: 1 0 200px;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #3F3E3E;
+}
+
+.FlexItem:hover {
+    color:#000;
+    background: rgba(231, 179, 106, .5);
+    border-radius: 5px;
+}
+
+.cover {
+    height: 200px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5)
+}
+
+.book {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: Helvetica;
+}
+
+.booktitle {
+    font-weight: 600;
+}
+
+.back {
+    margin-left: 20px;
+}
+
+.match {
+    font-size: 0.9em;
+    color: #347820;
+    font-weight: bold;
+}
