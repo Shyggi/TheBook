@@ -1,11 +1,11 @@
 @extends('master')
-@section('title', 'Login')
+@section('title', 'Homepage')
 
 <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
 
 @section('content')
     <div class="container bg">
-        <img src="C:\xampp\htdocs\thebook\public\images\bg.png" alt="Snow" style="width:100%;">
+        <img style="width: 100%;" src="{{url('images/bg.png')}}" />
         <div class="centered"><h3><span class="title">Giving accurate recommendations one at a time.</span></h3> <br> <span class="body">Lorem ipsum dolor sit amet consectetur. Integer blandit sed sit natoque massa aliquet libero magna malesuada. Eu amet dui ac eget ornare nunc pretium quam. Lectus erat magna viverra commodo imperdiet tincidunt turpis aliquam. Vitae euismod nunc urna viverra eget viverra.</span></div>
     </div>
     <br><br><br><br>
@@ -64,7 +64,4 @@ $(document).ready(function() {
     }
 });
 </script>
-
-</body>
-
-</html>
+@endsection

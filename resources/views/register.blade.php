@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
+@section('title', 'Login')
 
-<head>
-	<title>Registration</title>
-	<link rel="stylesheet" href="C:\xampp\htdocs\thebook\public\css\register.css">
-</head>
-<body>
+<link rel="stylesheet" href="{{ asset('css/register.css') }}">
+
+@section('content')
+
     <div class="main">
         <img src="C:\xampp\htdocs\thebook\public\images\logotype.png" class="d-inline-block align-top pad" >
         <hr>
@@ -27,6 +25,5 @@
             <button type="submit"> Submit</button>
         </form>
     </div>
-</body>
 
-</html>
+    @endsection

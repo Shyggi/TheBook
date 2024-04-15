@@ -12,7 +12,7 @@
 <!-- Image and text -->
 <nav class="navbar navbar-custom">
     <a class="navbar-brand">
-      <img src="C:\xampp\htdocs\thebook\public\images\logotype.png" height= 40 class="d-inline-block align-top" alt="">
+      <img class="d-inline-block align-top" height=40 src="{{url('images/logotype.png')}}" />
     </a>
 
       <div class="dropdown">  
