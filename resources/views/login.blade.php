@@ -1,4 +1,6 @@
-@extends('title')
+@extends('master')
+@section('title', 'Login')
+
 <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 
 @section('content')
